@@ -4,7 +4,6 @@
 import * as React from 'react'
 import {Switch} from '../switch'
 
-
 function Toggle({children}) {
   const [on, setOn] = React.useState(false)
   const toggle = () => setOn(!on)
@@ -29,8 +28,8 @@ function App() {
       <Toggle>
         <ToggleOn>The button is on</ToggleOn>
         <ToggleOff>The button is off</ToggleOff>
-        <span>Hello</span>
         <ToggleButton />
+        <span>Press</span>
       </Toggle>
     </div>
   )
