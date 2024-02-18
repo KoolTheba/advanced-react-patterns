@@ -3,9 +3,11 @@ on:
   push:
     branches:
       - 'main'
+      - 'next2'
   pull_request:
     branches:
       - 'main'
+      - 'next2'
 jobs:
   setup:
     # ignore all-contributors PRs
@@ -22,9 +24,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-
-      - name: npm 8
-        run: npm install --global npm@8
 
       - name: ▶️ Run setup script
         run: npm run setup
